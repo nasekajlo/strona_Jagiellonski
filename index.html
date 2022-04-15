@@ -1,0 +1,203 @@
+﻿<html>
+<head>
+	<meta charset="utf-8">
+	<title> потом придумаю</title>
+	<script type='text/javascript' src='js/script.js'></script>
+	<link rel="stylesheet" type='text/css' href='css/mycss.css'>
+</head>
+<body>
+	<div id="menu" class="menu">
+		<div style="display:contents">
+			<img src="images/gerb.png" class="gerb" style="margin-left: 5%;width:10%;margin-right:10%">
+		</div>
+		<div class="menu">
+			<div id="but1" class="navii" onclick="addline('but1')" style="border-top:3px solid">
+				<p class="navi">Strona główna</p>
+			</div>
+			<div id="but2" onclick="addline('but2')" class="navii">
+				<p class="navi">Podcasty</p>
+			</div>
+			<div id="but3" onclick="addline('but3')" class="navii">
+				<p class="navi">Moje KONTO</p>
+			</div>
+			<div id="but4" onclick="addline('but4')" class="navii">
+				<p class="navi">Tydzień z wydziałem</p>
+			</div>
+			<div id="but5" onclick="addline('but5')" class="navii">
+				<p class="navi">Rekrutacja</p>
+			</div>
+			<div id="but6" onclick="addline('but6')" class="navii">
+				<p class="navi">Uczelnia</p>
+			</div>
+		</div>
+		<div class="navigation">
+			<nav>
+				<a href="https://www.instagram.com/">
+					<img src="images/twitter.png" class="navimage">
+					<img src="images/mail.png" class="navimage">
+					<img src="images/telega.png" class="navimage">
+					<img src="images/imst.png" class="navimage">
+				</a>
+			</nav>
+		</div>
+	</div>
+	<div class="fix"  onclick="que()">Zadać pytanie</div>
+	<div class="form-wrap" id="que" style="display:none">
+		<div>
+			<img src="images/крестик.png" class="krest" onclick="hide()">
+		</div>
+		<div class="profile">
+			<h1 style="font-size:220%"> Otwarci dla pytań</h1>
+		</div>
+		<form method="post">
+			<div class="data">
+				<label for="email" style="display:block">Email</label>
+				<input type="email" name="email" required>
+			</div>
+			<div class="data">
+				<label for="name" style="display:block">Imię</label>
+				<input type="text" name="name" required>
+			</div>
+			<div class="data">
+				<label for="pytanie" style="display:block">Twoje pytanie</label>
+				<input type="text" name="pytanie" required>
+			</div>
+			<button type="submit" id="submit" onclick="hide()">Wysłać</button>
+		</form>
+	</div>
+	<div class="slider">
+		<div class="item">
+			<img src="images/Без имени.gif" alt="Первый слайд">
+			<a href="#volonter">
+				<div class="slideText">Poznać więcej</div>
+			</a>
+		</div>
+
+		<div class="item" style="display:none">
+			<img src="images/slide2.jpg" alt="Второй слайд">
+			<a href="#kobiety">
+				<div class="slideText">Poznać więcej</div>
+			</a>
+		</div>
+
+		<div class="item" style="display:none">
+			<img src="images/slide1.jpg" alt="Третий слайд">
+			<a href="#dzien">
+				<div class="slideText">Poznać więcej</div>
+			</a>
+		</div>
+
+		<a class="prev" onclick="minusSlide()">&#10094;</a>
+		<a class="next" onclick="plusSlide()">&#10095;</a>
+	</div>
+
+	<div class="slider-dots">
+		<span class="slider-dots_item" onclick="currentSlide(1)"></span>
+		<span class="slider-dots_item" onclick="currentSlide(2)"></span>
+		<span class="slider-dots_item" onclick="currentSlide(3)"></span>
+	</div>
+	<hr>
+	<p class="new">
+		<span class="news">
+			NASZE NOWOŚCI
+		</span>
+	</p>
+	<div class="content">
+		<div id="volonter" class="volon">
+			<div style="margin:30px">
+				<img src="images/volon.jpg" class="imgvolon">
+			</div>
+			<div>
+				<h2>
+					Pomoc innym
+				</h2>
+				<p>
+					Na Uniwersytecie Jagiellońskim corocznie działa akcja na wsparcie niezamożnych rodzin, zwierząt w przytułkach i ludzi niepełnosprawnych.<br>
+					Ale dziś mamy konkretny cel - pomóc Ukraińcom! Z tego powodu na uniwersytecie Jagiellońskim Ukraińscy studenci mogą dostać na uczelnie albo kontynuować studia.
+					<br />Żeby poznać więcej - przejdź z linka o zobacz zasady rejestracji.
+
+				</p>
+			</div>
+		</div>
+		<div id="kobiety" class="volon" style="padding-left:8%">
+			<div style="width:100%">
+				<h2>Wydział informatyki i matematyki </h2>
+				<p>
+					Wkrótce odbędzie się spotkanie z rektorem i nauczycielami wydziała informatyki i fizyki,
+					<br />gdzie będziesz mógł zadawać pytania i usłyszeć dla siebie nową informację.
+				</p>
+			</div>
+			<div>
+				<img src="images/женщина.jpg" class="imgvolon" style="width:80%;margin-left:5%">
+			</div>
+		</div>
+		<div id="dzien" class="volon">
+			<div style="width:70%;margin:5%">
+				<img src="images/день.jpg" class="imgvolon">
+			</div>
+			<div>
+				<h2>Dzień otwarty na UJ!</h2>
+				<p>
+					Już bardzo wkrótce zaczyna się rekrutacja na studia na UJ.Żeby nic nie zgubić,
+					<br />proponujemy tobie zwiedzić nasze spotkanie wirtualne, jakie odbędzie się 24 marca.
+				</p>
+			</div>
+		</div>
+		<div id="stypendium" class="volon" style="padding-left:8%">
+			<div style="width:200%">
+				<h2>Stypendium Uniwersyteta Jagiellońskiego </h2>
+				<p>
+					Stypendium Uniwersytetu Jagiellońskiego stanowi prestiżowe wyróżnienie. Dostają je jedynie wybitne uzdolnione osoby, chcące podjąć studia na naszej Uczelni.
+					<br />Stanowi ono propozycję pozwalającą najzdolniejszym osobom realizować plany naukowe oraz rozwijać różnorodne talenty w atmosferze poszanowania swobody
+					<br />twórczej i wolności badań naukowych.
+				</p>
+			</div>
+			<div>
+				<img src="images/ягеллно.jpg" class="imgvolon" style="width:70%;margin-left:15%;margin-bottom:5%">
+			</div>
+		</div>
+		<div id="dzien" class="volon">
+			<div style="width:150%;margin:5%">
+				<img src="images/erasmus.jpg" class="imgvolon">
+			</div>
+			<div>
+				<h2>Jeszcze nie słyszałeś o programie Erasmus...</h2>
+				<p>
+					Erasmus + to program Unii Europejskiej na rzecz kształcenia, szkolenia, młodzieży i sportu na lata 2021 - 2027.
+
+					Erasmus+ zastąpił dotychczasowy program: „Uczenie się przez całe życie” oraz jego programy sektorowe: Erasmus, Leonardo da Vinci, Comenius i Grundtvig, akcję Jean Monnet, 
+					<br />program Młodzież w działaniu oraz pięć innych programów, m.in. Erasmus Mundus i Tempus.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="conto" style="justify-content:space-around">
+		<div id="conto" class="conto">
+			<div>
+				<img src="images/контакт.png" style="fill:transparent">
+			</div>
+			<div>
+				<div class="kont" onclick="window.location.href = 'my.html'">
+					My Contacts :sofuszka
+				</div>
+				<div class="kont">
+					<br>
+					Uniwersytet Jagielloński w Krakowie<br>
+					ul. Gołębia 24, 31-007 Kraków<br>
+					Współrzędne: 50.060931, 19.932782
+				</div>
+			</div>
+		</div>
+		<div class="navigation" style="margin:0px">
+			<nav>
+				<a href="https://www.instagram.com/">
+					<img src="images/twitter.png" class="navimage">
+					<img src="images/mail.png" class="navimage">
+					<img src="images/telega.png" class="navimage">
+					<img src="images/imst.png" class="navimage">
+					</a>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>
