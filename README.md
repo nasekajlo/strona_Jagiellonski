@@ -4,4 +4,4 @@ Lyceum BSU.
 Podstawą dla strony służyła strona originalna, ale mimo tego ona napisana samodzielnie, używając tylko wygląd originala. 
 Niestety jeszcze nie wszystko dziła (np forma dla pytań, bo nie zdążyłam poradzić sobie z serwerem), ale w planach planuję to skończyć.
 
-UWAGA! Strona głowna znajduje się w input.html (strona początkowa, z niej trzena zacząć obserwować)
+UWAGA! Strona głowna znajduje się w index.html (strona początkowa, z niej trzena zacząć obserwować)
