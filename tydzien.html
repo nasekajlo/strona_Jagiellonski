@@ -1,0 +1,174 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title> потом придумаю</title>
+    <script type='text/javascript' src='js/script.js'></script>
+    <link rel="stylesheet" type='text/css' href='css/mycss.css'>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div style="display:contents">
+            <img src="images/gerb.png" class="gerb" style="margin-left: 5%;width:10%;margin-right:10%">
+        </div>
+        <div class="menu">
+            <div id="but1" class="navii" onclick="addline('but1')">
+                <p class="navi">Strona główna</p>
+            </div>
+            <div id="but2" onclick="addline('but2')" class="navii">
+                <p class="navi">Podcasty</p>
+            </div>
+            <div id="but3" onclick="addline('but3')" class="navii">
+                <p class="navi">Moje KONTO</p>
+            </div>
+            <div id="but4" onclick="addline('but4')" class="navii" style="border-top:3px solid">
+                <p class="navi">Tydzień z wydziałem</p>
+            </div>
+            <div id="but5" onclick="addline('but5')" class="navii">
+                <p class="navi">Rekrutacja</p>
+            </div>
+            <div id="but6" onclick="addline('but6')" class="navii">
+                <p class="navi">Uczelnia</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="fix" onclick="que()">Zadać pytanie</div>
+    <div class="form-wrap" id="que" style="display:none">
+        <div>
+            <img src="images/крестик.png" class="krest" onclick="hide()">
+        </div>
+        <div class="profile">
+            <h1 style="font-size:220%"> Otwarci dla pytań</h1>
+        </div>
+        <form method="post">
+            <div class="data">
+                <label for="email" style="display:block">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="data">
+                <label for="name" style="display:block">Imię</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="data">
+                <label for="pytanie" style="display:block">Twoje pytanie</label>
+                <input type="text" name="pytanie" required>
+            </div>
+            <button type="submit" id="submit" onclick="hide()">Wysłać</button>
+        </form>
+    </div>
+    <div class="media">
+        <div style="width:30%">
+            <div>
+                <img style="width:60%;margin-left:20%" src="images/dziew.jfif">
+            </div>
+            <a href="https://www.instagram.com/misjauj/">
+                <div id="but" class="Text">
+                    INSTAGRAM MISJA.UJ
+                </div>
+            </a>
+        </div>
+        <div style="width:30%">
+            <div>
+                <img style="width:60%;margin-left:20%" src="images/miez.jpg">
+            </div>
+            <a href="https://www.facebook.com/groups/RekrutacjaUJ/">
+                <div id="but" class="Text">
+                    GRUPA NA FB
+                </div>
+            </a>
+        </div>
+        <div style="width:30%">
+            <div>
+                <img style="width:75%;margin-left:15%" src="images/mikro.jpg">
+                <a href="podacsty.html">
+                    <div id="but" class="Text">
+                        PODCASTY
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="volon" style="padding:5%">
+            <div>
+                <img style="width:120%" src="https://i.ytimg.com/vi_webp/iKhf9ic6yMY/sddefault.webp">
+            </div>
+            <div style="margin-left:20%">
+                <h2>
+                    TYDZIEŃ Z WYDZIAŁEM 2021
+                </h2>
+                <p>
+                    Przez 16 tygodni przybliżaliśmy Wam Wydziały Uniwersytetu Jagiellońskiego. Zapraszamy do przejrzenia relacji!
+                </p>
+                <a href="https://www.youtube.com/watch?v=iKhf9ic6yMY">
+                    <div id="but" class="Text">
+                        Zobacz na yt
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div>
+        <img style="width:50%;margin-left:25%" src="images/tydzien.jpg">
+    </div>
+    <div style="margin-top:5%" class="wrapper">
+        <h1>WYDZIAŁY</h1>
+    </div>
+    <div class="content">
+        <div class="volon" style="padding:5%">
+            <div>
+                <img style="width:120%" src="images/комп.jpg">
+            </div>
+            <div style="margin-left:20%">
+                <h2>
+                    WYDZIAŁ MATEMATYKI I INFORMATYKI (NAJLEPSZY WYDZIAŁ! )
+                </h2>
+                <p>
+                    Zapoznaj się z informacjami odnośnie zalet studiowania na Wydziale Matematyki i Informatyki UJ, kierunków studiów oraz rekrutacji na studia.
+                    <br />
+                    Termin: 22 - 26 lutego 2021 r.
+                </p>
+                <a href="https://misja.uj.edu.pl/tydzien-z-wydzialem/wydzial-matematyki-i-informatyki/">
+                    <div id="but" class="Text">
+                        Dowiedz się więcej
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="volon" style="padding-bottom:5%">
+            <div style="">
+                <h2>
+                    WYDZIAŁ POLONISTYKI
+                </h2>
+                <p>
+                    Zapoznaj się z informacjami odnośnie zalet studiowania na Wydziale, kierunków studiów oraz rekrutacji na studia. Posłuchaj dlaczego warto studiować na Wydziale Polonistyki.
+                    <br>
+                    Termin: 8 - 12 lutego 2021 r.
+                </p>
+                <a href="https://misja.uj.edu.pl/tydzien-z-wydzialem/wydzial-polonistyki/">
+                    <div id="but" class="Text">
+                        Dowiedz się więcej
+                    </div>
+                </a>
+            </div>
+            <div>
+                <img style="width:120%" src="images/polon.jpg">
+            </div>
+        </div>
+        <p style="margin-left:20%"> tamtej ich jest więcej, oczywiście)</p>
+    </div>
+</body>
+</html>

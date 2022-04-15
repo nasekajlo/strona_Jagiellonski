@@ -1,0 +1,192 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title> потом придумаю</title>
+    <script type='text/javascript' src='js/script.js'></script>
+    <link rel="stylesheet" type='text/css' href='css/mycss.css'>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div style="display:contents">
+            <img src="images/gerb.png" class="gerb" style="margin-left: 5%;width:10%;margin-right:10%">
+        </div>
+        <div class="menu">
+            <div id="but1" class="navii" onclick="addline('but1')">
+                <p class="navi">Strona główna</p>
+            </div>
+            <div id="but2" onclick="addline('but2')" class="navii" style="border-top:3px solid">
+                <p class="navi">Podcasty</p>
+            </div>
+            <div id="but3" onclick="addline('but3')" class="navii">
+                <p class="navi">Moje KONTO</p>
+            </div>
+            <div id="but4" onclick="addline('but4')" class="navii">
+                <p class="navi">Tydzień z wydziałem</p>
+            </div>
+            <div id="but5" onclick="addline('but5')" class="navii">
+                <p class="navi">Rekrutacja</p>
+            </div>
+            <div id="but6" onclick="addline('but6')" class="navii">
+                <p class="navi">Uczelnia</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="fix" onclick="que()">Zadać pytanie</div>
+    <div class="form-wrap" id="que" style="display:none">
+        <div>
+            <img src="images/крестик.png" class="krest" onclick="hide()">
+        </div>
+        <div class="profile">
+            <h1 style="font-size:220%"> Otwarci dla pytań</h1>
+        </div>
+        <form method="post">
+            <div class="data">
+                <label for="email" style="display:block">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="data">
+                <label for="name" style="display:block">Imię</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="data">
+                <label for="pytanie" style="display:block">Twoje pytanie</label>
+                <input type="text" name="pytanie" required>
+            </div>
+            <button type="submit" id="submit" onclick="hide()">Wysłać</button>
+        </form>
+    </div>
+    <div class="Iam">
+
+        <h2 style="margin:0">Nasze podcasty to</h2>
+        <b>
+            <div class="innerIam">
+                wspaniała możliwość<br />
+                poznać nowości obecne i <br />
+                usłyszeć opinii naszych przyjaciół<br />
+                Bądź z nami!<br />
+                Bądź na bieżąco!
+            </div>
+        </b>
+
+    </div>
+    <div class="content">
+        <div class="volon" style="padding-top:5%">
+            <div>
+                <img style="width:150%" src="https://i.gifer.com/OXie.gif" class="imgvolon">
+            </div>
+            <div style="margin-left:20%">
+                <h2>
+                    Jak przygotować się do rozmowy po angielski
+                </h2>
+                <p>
+                    Język angielski - klucz do nowych możliwości.<br> Mnóstwo prestiżowych firm wymagają wysokiego pozioma znajomości angielskiego na tematy dowolne: sztuka, sport, społeczeństwo i studia.<br />
+                    <a href="https://learnenglish.britishcouncil.org/en/elementary-podcasts">
+                        Britishcouncil Elementary Podcasts
+                    </a>
+
+                </p>
+            </div>
+        </div>
+        <div id="kobiety" class="volon" style="padding-left:6%">
+            <div style="margin-right:10%;width:80%">
+                <h2>Jesteśmy solidarni!</h2>
+                <p>
+                    Dziś chcemy porozmawiać z wami o rosyjską interwencji i jak to działa teraz z Ukrainą. W jaki sposób możemy pomóc Ukraińcom?<br />
+                    <a href="https://pikabu.ru/story/39_let_solidarnosti_polshi_istoriya_borbyi_6969290">
+                        Historia polską walki o swobodę przeciwko Związku Radzieckiego
+                    </a>
+                </p>
+            </div>
+            <div>
+                <img src="images/солидарность.png" class="imgvolon" style="width: 80%">
+            </div>
+        </div>
+        <div id="dzien" class="volon">
+            <div style="margin-bottom:3%">
+                <img style="width:120%" src="images/ася.jpg" class="imgvolon">
+            </div>
+            <div style="margin-left:20%;margin-bottom:10%">
+                <h2>JUŻ ZACZYNA SIĘ REKRUTACJA NA STUDIA</h2>
+                <p>
+                    Już zaczyna się rekrutacja, ale wydarzenia obecne robią własne zmiany, więc proponujemy posłuchać podcast i podyskutować o tym razem z nami.<br />
+                    <a href="https://irk.uj.edu.pl/pl/offer/IiJM_C_22/programme/inform_s1s_C/?from=field:inform">
+                        Przechodź do nas
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div id="but" class="slideText"
+             style="font-size:20px;position:relative;width:fit-content"
+             onclick="addblock()">
+            Zobacz więcej
+        </div>
+
+        <div id="add" style="display:none;padding-bottom:3%" class="volon">
+            <div style="margin-right:3%;width:50%">
+                <h2>Porozmawiajmy o pandemii</h2>
+                <p>
+                    Pandemia rozbije wszystkie nasze plany. Jak poradzi sobie młodzież obecna i co można podjąć
+                </p>
+                <a href="https://pikabu.ru/story/39_let_solidarnosti_polshi_istoriya_borbyi_6969290">
+                    Na zdrówko!
+                </a>
+            </div>
+            <div>
+                <img src="https://avatars.mds.yandex.net/i?id=05b48d5c5a9f29c29463a75796937f47-4836347-images-thumbs&n=13" class="imgvolon">
+            </div>
+        </div>
+        <div id="add2" style="display:none;padding-bottom:3%" class="volon">
+            <div>
+                <img src="https://generation.erasmusplus.fr/wp-content/uploads/ERASMUS-2.png" class="imgvolon">
+            </div>
+            <div style="margin-left:13%">
+                <h2>ERASMUS. CO BĘDZIE W TYM ROKU: Tokio czy Rzym?</h2>
+                <p>
+                    Program Erasmus proponuje w tym roku zwiedzić trochę inne miejsca z powodu pandemii. Czy w ogóle będzie możliwe pojechać zagranicę na studia?
+                </p>
+                <a href="https://pikabu.ru/story/39_let_solidarnosti_polshi_istoriya_borbyi_6969290">
+                    Dołącz  do online spotkania
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="conto" style="justify-content:space-around">
+        <div id="conto" class="conto">
+            <div>
+                <img src="images/контакт.png" style="fill:transparent">
+            </div>
+            <div>
+                <div class="kont" onclick="window.location.href = 'my.html'">
+                    My Contacts :sofuszka
+                </div>
+                <div class="kont">
+                    <br>
+                    Uniwersytet Jagielloński w Krakowie<br>
+                    ul. Gołębia 24, 31-007 Kraków<br>
+                    Współrzędne: 50.060931, 19.932782
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

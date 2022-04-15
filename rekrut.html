@@ -1,0 +1,185 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title> потом придумаю</title>
+    <script type='text/javascript' src='js/script.js'></script>
+    <link rel="stylesheet" type='text/css' href='css/mycss.css'>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div style="display:contents">
+            <img src="images/gerb.png" class="gerb" style="margin-left: 5%;width:10%;margin-right:10%">
+        </div>
+        <div class="menu">
+            <div id="but1" class="navii" onclick="addline('but1')">
+                <p class="navi">Strona główna</p>
+            </div>
+            <div id="but2" onclick="addline('but2')" class="navii">
+                <p class="navi">Podcasty</p>
+            </div>
+            <div id="but3" onclick="addline('but3')" class="navii">
+                <p class="navi">Moje KONTO</p>
+            </div>
+            <div id="but4" onclick="addline('but4')" class="navii">
+                <p class="navi">Tydzień z wydziałem</p>
+            </div>
+            <div id="but5" onclick="addline('but5')" class="navii" style="border-top:3px solid">
+                <p class="navi">Rekrutacja</p>
+            </div>
+            <div id="but6" onclick="addline('but6')" class="navii">
+                <p class="navi">Uczelnia</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="fix" onclick="que()">Zadać pytanie</div>
+    <div class="form-wrap" id="que" style="display:none">
+        <div>
+            <img src="images/крестик.png" class="krest" onclick="hide()">
+        </div>
+        <div class="profile">
+            <h1 style="font-size:220%"> Otwarci dla pytań</h1>
+        </div>
+        <form method="post">
+            <div class="data">
+                <label for="email" style="display:block">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="data">
+                <label for="name" style="display:block">Imię</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="data">
+                <label for="pytanie" style="display:block">Twoje pytanie</label>
+                <input type="text" name="pytanie" required>
+            </div>
+            <button type="submit" id="submit" onclick="hide()">Wysłać</button>
+        </form>
+    </div>
+    <h1>REKRUTACJA</h1>
+    <div class="content">
+        <div class="volon" style="padding:5%">
+            <div>
+                <img style="width:120%" src="https://misja.uj.edu.pl/wp-content/uploads/2020/07/800x475-1.jpg" class="imgvolon">
+            </div>
+            <div style="margin-left:20%">
+                <h2>
+                    REKRUTACJA W 4 KROKACH- FILMY INSTRUKTAŻOWE
+                </h2>
+                <p>
+                    Poznaj zasady tworzenia konta oraz korzystania z systemu IRK. Obejrzyj filmy instruktażowe!
+                </p>
+                <a href="https://misja.uj.edu.pl/4-kroki-filmy/">
+                    <div id="but" class="Text">
+                        Zobacz film
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="kobiety" class="volon">
+            <div style="margin-left:3%">
+                <h2>REKRUTACJA NA STUDIA</h2>
+                <p>
+                    Załóż konto w systemie IRK i zarejestruj się na studia.
+                </p>
+                <a href="https://irk.uj.edu.pl/pl/">
+                    <div id="but" class="Text">
+                        Rejestracja
+                    </div>
+                </a>
+
+            </div>
+            <div style="margin-left:10%">
+                <img style="width:90%" src="https://misja.uj.edu.pl/wp-content/uploads/2017/03/rejestracja-na-studia.jpg" class="imgvolon">
+            </div>
+        </div>
+        <div id="dzien" class="volon">
+            <div style="margin-bottom:3%">
+                <img style="width:90%" src="https://misja.uj.edu.pl/wp-content/uploads/2020/05/szkoly-doktoranckie.jpg" class="imgvolon">
+            </div>
+            <div style="margin-left:20%;margin-bottom:10%">
+                <h2>INFORMACJE O REKRUTACJI</h2>
+                <p>
+                    Dowiedz się więcej o zasadach rekrutacji na studia.
+                </p>
+                <a href="https://rekrutacja.uj.edu.pl/">
+                    <div id="but" class="Text">
+                        Dowiedz się więcej
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="add" style="padding-bottom:3%" class="volon">
+            <div style="margin-right:3%">
+                <h2>REKRUTACJA NA STUDIA I STOPNIA, JEDNOLITE MAGISTERSKIE</h2>
+                <p>
+                    Poznaj zasady rekrutacji oraz sprawdź jakie dokumenty są potrzebne, żeby ubiegać się o przyjęcie na wybrany przez Ciebie kierunek studiów.
+                </p>
+                <a href="https://misja.uj.edu.pl/rekrutacja-studia-stopnia/">
+                    <div id="but" class="Text">
+                        Dowiedz się więcej
+                    </div>
+                </a>
+            </div>
+            <div>
+                <img style="width:110%" src="https://misja.uj.edu.pl/wp-content/uploads/2017/03/I-stopnia-rekrutacja.jpg" class="imgvolon">
+            </div>
+        </div>
+        <div id="add2" style="padding-bottom:3%" class="volon">
+            <div>
+                <img src="https://misja.uj.edu.pl/wp-content/uploads/2017/03/II-stopnia.jpg" class="imgvolon">
+            </div>
+            <div style="margin-left:3%">
+                <h2>STUDIA W JĘZYKACH OBCYCH</h2>
+                <p>
+                    Poznaj zasady rekrutacji oraz sprawdź jakie dokumenty są potrzebne, żeby ubiegać się o przyjęcie na wybrany przez Ciebie kierunek studiów.
+                </p>
+                <a href="https://welcome.uj.edu.pl/">
+                    <div id="but" class="Text">
+                        Dowiedz się więcej
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="conto" style="justify-content:space-around">
+        <div id="conto" class="conto">
+            <div>
+                <img src="images/контакт.png" " style="fill:transparent">
+            </div>
+            <div>
+                <div class="kont" onclick="window.location.href = 'my.html'">
+                    My Contacts :sofuszka
+                </div>
+                <div class="kont">
+                    <br>
+                    Uniwersytet Jagielloński w Krakowie<br>
+                    ul. Gołębia 24, 31-007 Kraków<br>
+                    Współrzędne: 50.060931, 19.932782
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

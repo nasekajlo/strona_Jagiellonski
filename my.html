@@ -1,0 +1,117 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title> потом придумаю</title>
+    <script type='text/javascript' src='js/script.js'></script>
+    <link rel="stylesheet" type='text/css' href='css/mycss.css'>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div style="display:contents">
+            <img src="images/gerb.png" class="gerb" style="margin-left: 5%;width:10%;margin-right:10%">
+        </div>
+        <div class="menu">
+            <div id="but1" class="navii" onclick="addline('but1')">
+                <p class="navi">Strona główna</p>
+            </div>
+            <div id="but2" onclick="addline('but2')" class="navii">
+                <p class="navi">Podcasty</p>
+            </div>
+            <div id="but3" onclick="addline('but3')" class="navii" style="border-top:3px solid">
+                <p class="navi">Moje KONTO</p>
+            </div>
+            <div id="but4" onclick="addline('but4')" class="navii">
+                <p class="navi">Tydzień z wydziałem</p>
+            </div>
+            <div id="but5" onclick="addline('but5')" class="navii">
+                <p class="navi">Rekrutacja</p>
+            </div>
+            <div id="but6" onclick="addline('but6')" class="navii">
+                <p class="navi">Uczelnia</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="fix" onclick="que()">Zadać pytanie</div>
+    <div class="form-wrap" id="que" style="display:none">
+        <div>
+            <img src="images/крестик.png" class="krest" onclick="hide()">
+        </div>
+        <div class="profile">
+            <h1 style="font-size:220%"> Otwarci dla pytań</h1>
+        </div>
+        <form method="post">
+            <div class="data">
+                <label for="email" style="display:block">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="data">
+                <label for="name" style="display:block">Imię</label>
+                <input type="text" name="name" required>
+            </div>
+            <div class="data">
+                <label for="pytanie" style="display:block">Twoje pytanie</label>
+                <input type="text" name="pytanie" required>
+            </div>
+            <button type="submit" id="submit" onclick="hide()">Wysłać</button>
+        </form>
+    </div>
+    <div class="wrapper">
+        <h1>Sofia Nasekajlo</h1>
+    </div>
+    <div class="content" style="width:60%">
+        <div class="volon" style="padding:5%">
+            <div>
+                <img style="width:50%" src="images/sonik.jpg" class="imgvolon">
+            </div>
+            <div>
+                <h2>
+                    Trochę o siebie
+                </h2>
+                <p>
+                    Lubię informatykę, matematykę i fizykę. Jestem dobrą dziewczynką (przynajmniej mówi moja maci)!
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="conto" style="justify-content:space-around">
+        <div id="conto" class="conto">
+            <div>
+                <img src="images/контакт.png" class="kont" style="fill:transparent">
+            </div>
+            <div>
+                <div>
+                    My Contacts :sofuszka
+                </div>
+                <div>
+                    <br>
+                    Uniwersytet Jagielloński w Krakowie<br>
+                    ul. Gołębia 24, 31-007 Kraków<br>
+                    Współrzędne: 50.060931, 19.932782
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <a href="https://www.instagram.com/">
+                    <img src="images/twitter.png" class="navimage">
+                    <img src="images/mail.png" class="navimage">
+                    <img src="images/telega.png" class="navimage">
+                    <img src="images/imst.png" class="navimage">
+                </a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
